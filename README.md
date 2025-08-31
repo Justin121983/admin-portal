@@ -20,8 +20,8 @@ The project consists of the following files:
 0. `main.py`: The man program script. Starting point.
 1. `app.py`: The main Flask application file containing the server logic.
 2. `admin_users.json`: A JSON file containing a list of admin users' credentials.
-3. `client_secret.json`: A JSON file containing Google Drive API keys and credentials. (Get it from here [https://console.cloud.google.com/])
-4. `.stored_files.json`: A JSON file used for attaining Data transparency, this file is kept in synced with the pinecone vector database. (maintained by the `manage_vectordb.py`)
+3. `client_secret.json`: A JSON file containing Google Drive API keys and credentials.
+4. `.stored_files.json`: A JSON file used for attaining Data transparency, this file is kept in synced with the pinecone vector database.
 5. `utils.py`: Utilites / helper functions for `app.py`
 6. `manage_vectordb.py`: Module for managing the data on Pinecone vector database. Also a standalone script for testing the database.
 
@@ -29,8 +29,8 @@ The project consists of the following files:
 1. Clone the repository from GitHub.
 
 ```(bash)
-git clone https://github.com/madhav-mknc/admin-portal
-cd https://github.com/madhav-mknc/admin-portal
+git clone https://github.com/Justin121983/admin-portal
+cd https://github.com/Justin121983/admin-portal
 ```
 2. Install the required dependencies using:
 ```(bash)
@@ -77,6 +77,3 @@ The Flask application exposes the following routes:
 1. The project uses Flask's built-in session management to store the authenticated status, which is not suitable for production environments. In a real-world application, consider using a more robust session management solution.
 2. The `allowed_file()` function allows only specific file types (txt, pdf, doc, docx, csv) to be uploaded. Modify the `ALLOWED_EXTENSIONS` set to include additional file types if required.
 3. In a production environment, it's crucial to ensure secure file uploads to prevent any potential security risks.
-
-## License
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify it according to your needs.
